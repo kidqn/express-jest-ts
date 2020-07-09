@@ -3,6 +3,12 @@
   "version": "1.0.0",
   "main": "src/index.js",
   "license": "MIT",
+  "scripts": {
+    "build": "webpack -p",
+    "start:dev": "cross-env NODE_ENV=development webpack",
+    "run:dev": "cross-env NODE_ENV=development nodemon build/server.js",
+    "test": "jest"
+  },
   "devDependencies": {
     "@types/jest": "^25.2.1",
     "@types/node": "^11.9.3",
